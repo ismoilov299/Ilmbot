@@ -1,3 +1,4 @@
+from aiogram import types
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 main_keyboard = ReplyKeyboardMarkup(
@@ -6,7 +7,7 @@ main_keyboard = ReplyKeyboardMarkup(
             KeyboardButton('Toshkent'),
             KeyboardButton('Samarqand'),
             KeyboardButton('Andijon'),
-        ], 
+        ],
         [
             KeyboardButton('Urganch'),
             KeyboardButton('Navoi'),
@@ -28,6 +29,15 @@ main_keyboard = ReplyKeyboardMarkup(
     ],
     resize_keyboard=True
 )
+
+adminMenu = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text='All users'),
+            KeyboardButton(text='Follow namaz')
+        ],
+    ],
+    resize_keyboard=True)
 
 asosiy = ReplyKeyboardMarkup(
     keyboard=[

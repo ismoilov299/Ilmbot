@@ -4,7 +4,7 @@ import os
 
 dotenv.load_dotenv()
 
-TOKEN = os.getenv("TOKEN")          #
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)

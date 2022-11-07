@@ -1,28 +1,54 @@
-import asyncio
-import sqlite3
 
-import aioschedule as aioschedule
+
+
+
 from aiogram.types.message import Message
-import requests
-from aiogram.utils import executor
+
+from aiogram.dispatcher.filters import Command
+
 
 from config import dp, bot
 from aiogram import types
-from keyboards import main_keyboard,asosiy
-# from prayer_time import NamozVaqti
+from keyboards import asosiy, adminMenu, main_keyboard
+from loader import db
 from prayer_time.vaqt import NamozVaqti
 
 
-
+ADMINS= 1161180912
 
 @dp.message_handler(commands=['start'])
 async def start(message:types.Message):
+    for user in db.get_users_subscribe():
+        print(user[3])
     await message.reply('Namoz vaqti botiga hush kelibsiz', reply_markup=asosiy)
 
 
+
+@dp.message_handler(Command("admins"),user_id=ADMINS)
+async def show_menu(message: Message):
+    await message.answer("Admin menu",reply_markup=adminMenu)
+
+@dp.message_handler(text="All users", user_id=ADMINS)
+async def get_all_users(message: Message):
+    users = f"XAMMA USERSLAR:{db.select_all_users()}"
+
+    await bot.send_message(chat_id=message.from_user.id, text=users)
+
+#
+@dp.message_handler(text="Follow namaz", user_id=ADMINS)
+async def count_obuna(message: Message):
+    def count():
+        msg = ""
+        i = ""
+        for i, us in enumerate(db.count_obuna()):
+            msg += f"""{i+1}.<b>{us[1]}</b>({us[2]})\n"""
+            i += i
+        return f"{msg}\n\nObunachilar soni {i}"
+    await bot.send_message(chat_id=message.from_user.id, text=count())
+
 @dp.message_handler(text='Namoz vaqti')
 async def pray_time(message:types.Message):
-    await message.answer("👳🏻‍♂️ Namoz vaqti uchun Viloyat tanlang!", reply_markup=main_keyboard)
+    await message.answer("👳🏻‍♂️ Namoz vaqti uchun Viloyat tanlang!",reply_markup=main_keyboard)
 
 @dp.message_handler(text="back")
 async def go_back(mes:types.Message):
