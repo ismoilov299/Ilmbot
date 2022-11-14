@@ -47,11 +47,7 @@ class DataBase:
         self.execute(sql, parameters=(user_id, name), commit=True)
 
 
-    # def delete_users(self):
-    #     self.execute("DELETE FROM Users WHERE TRUE", commit=True)
-    #
-    # def delete_user(self, id: int, name: str):
-    #     self.execute("DELETE FROM Users WHERE id=? AND Name=?", parameters=(id, name), commit=True)
+
 
     def select_user(self,region: str, subscribe: int, user_id: int):
         return self.execute("SELECT * FROM users WHERE region=? and subscribe=? and user_id=?", parameters=(region, subscribe, user_id), fetchone=True)

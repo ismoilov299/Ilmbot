@@ -66,7 +66,7 @@ async def region(msg:types.Message):
     await msg.reply(f"Sana: {obj.get_sana()}\n\nKun: {obj.get_kun()}\n\nShahar : Tashkent \n\nBomdod  {obj.bomdod()}\n\nQuyosh  {obj.quyosh_chiqishi()}\n\nPeshin  {obj.peshin()}\n\nAsr  {obj.asr()}\n\nShom {obj.shom()} \n\nXufton {obj.xufton()}",parse_mode='html')
 
 
-@dp.message_handler(text='Andijon')
+@dp.message_handler(text='Samarqand')
 async def region(msg:types.Message):
     obj = NamozVaqti('Andijon')
     await msg.reply(f"Sana: {obj.get_sana()}\n\nKun: {obj.get_kun()}\n\nShahar : Tashkent \n\nBomdod  {obj.bomdod()}\n\nQuyosh  {obj.quyosh_chiqishi()}\n\nPeshin  {obj.peshin()}\n\nAsr  {obj.asr()}\n\nShom {obj.shom()} \n\nXufton {obj.xufton()}",parse_mode='html')
