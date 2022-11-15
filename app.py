@@ -78,10 +78,14 @@ async def scheduler():
     # for users in db.get_users_subscribe():
     #     user_regions = users[3]
     obj = NamozVaqti(user_regions)
+    b  = obj.bomdod()
+    q = obj.quyosh_chiqishi()
     w = obj.peshin()
     a = obj.asr()
     sh = obj.shom()
     x = obj.xufton()
+    aioschedule.every().day.at(b).do(bomdod)
+    aioschedule.every().day.at(q).do(quyosh)
     aioschedule.every().day.at(w).do(peshin)
     aioschedule.every().day.at(a).do(asr)
     aioschedule.every().day.at(sh).do(shom)
