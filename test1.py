@@ -1,7 +1,5 @@
 # from prayer_time.vaqt import NamozVaqti
 from loader import db
-from app import user
-print(user)
 # obj = NamozVaqti('Toshkent')
 # print(obj.bomdod())
 # print(obj.quyosh_chiqishi())
@@ -21,3 +19,24 @@ print(user)
 #     q, w, e, r, t = i
 #     if t == 1:
 #         print(q, w, e, r,)
+# from datetime import datetime
+# import pytz
+#
+# # current Datetime
+# unaware = datetime.now()
+# print('Timezone naive:', unaware)
+#
+# # Standard UTC timezone aware Datetime
+# aware = datetime.now(pytz.utc)
+# print('Timezone Aware:', aware)
+#
+# # US/Central timezone datetime
+# aware_us_central = datetime.now(pytz.timezone('Asia/Tashkent'))
+# print('US Central DateTime', aware_us_central)
+# print(datetime.now())
+
+
+
+for user in db.get_users_subscribe():
+    user_id = user[0:4]
+    print(user_id)
