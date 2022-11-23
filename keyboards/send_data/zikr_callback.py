@@ -20,35 +20,35 @@ async def zikr(msg:Message):
 
 @dp.callback_query_handler(text='zikr1')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=636, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=636)
 
 @dp.callback_query_handler(text='zikr2')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=538, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=538)
 
 @dp.callback_query_handler(text='zikr3')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=558, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=558)
 
 @dp.callback_query_handler(text='zikr4')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=638, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=638)
 
 @dp.callback_query_handler(text='zikr5')
 async def duo(call: CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=639, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=639)
 
 @dp.callback_query_handler(text='zikr6')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=539, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=539)
 
 @dp.callback_query_handler(text='zikr7')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=553, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=553)
 
 @dp.callback_query_handler(text='zikr8')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=555, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=555)
 
 
 
@@ -84,35 +84,35 @@ async def regions_callback(call: CallbackQuery):
 
 @dp.callback_query_handler(text='zikr9')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=560, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=560)
 
 @dp.callback_query_handler(text='zikr10')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=540, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=540)
 
 @dp.callback_query_handler(text='zikr11')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=542, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=542)
 
 @dp.callback_query_handler(text='zikr12')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=550, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=550)
 
 @dp.callback_query_handler(text='zikr13')
 async def duo(call: CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=548, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=548)
 
 @dp.callback_query_handler(text='zikr14')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=551, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=551)
 
 @dp.callback_query_handler(text='zikr15')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=554, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=554)
 
 @dp.callback_query_handler(text='zikr16')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=552, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=552)
 
 
 @dp.callback_query_handler(text='zikrinline2')
@@ -132,33 +132,33 @@ async def regions_callback(call: CallbackQuery):
 
 @dp.callback_query_handler(text='zikr17')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=637, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=637)
 
 @dp.callback_query_handler(text='zikr18')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=590, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=590)
 
 @dp.callback_query_handler(text='zikr19')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=591, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=591)
 
 @dp.callback_query_handler(text='zikr20')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=592, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=592)
 
 @dp.callback_query_handler(text='zikr21')
 async def duo(call: CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=593, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=593)
 
 @dp.callback_query_handler(text='zikr22')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=597, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=597)
 
 @dp.callback_query_handler(text='zikr23')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=661, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=661)
 
 @dp.callback_query_handler(text='zikr24')
 async def duo(call:CallbackQuery):
-    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=660, protect_content=True)
+    await bot.copy_message(chat_id=call.from_user.id, from_chat_id=chanel, message_id=660)
 

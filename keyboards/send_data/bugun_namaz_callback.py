@@ -6,24 +6,27 @@ from prayer_time.vaqt import NamozVaqti
 
 
 def bugun(region):
-    ob = NamozVaqti('Toshkent')
+    ob = NamozVaqti(region)
     return (f""" 
     📍Mintaqa - {region}
-§<b>{ob.get_kun()}</b>
+    <b>{ob.get_kun()}</b>
 
     📆<i>{ob.get_sana()}</i>
-    
+
     🌌 Bomdod: <b>{ob.bomdod()}</b>
     🌄 Quyosh: <b>{ob.quyosh_chiqishi()}</b>
     🌇 Peshin: <b>{ob.peshin()}</b>
     🌆 Asr: <b>{ob.asr()}</b>
     🏙 Shom: <b>{ob.shom()}</b>
     🌃 Xufton: <b>{ob.xufton()}</b>
+    
+    <b> Nazmoz vaqtlari islom.uz saytidan olindi</b>
     """)
 
 
-"""CALLBACK_QUERY_HANDLER"""
 
+"""CALLBACK_QUERY_HANDLER"""
+#Toshkent Andijon Buxoro Guliston Samarqand Namangan Navoiy Jizzax Nukus Qarshi Qo'qon Xiva
 @dp.callback_query_handler(text='bugun:toshkent')
 async def inline_today_toshkent(call: CallbackQuery):
     await call.message.delete()

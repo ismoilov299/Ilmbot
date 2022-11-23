@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e2df7465843329b8f13bd8710ef65ef706ccd9a567d08e8ef666d4add5e0628e"
+            "sha256": "3ec838db9a8629c749533dbf067fa4e3f5732adeae40e0f52a239a521e4c9fe6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,6 +23,14 @@
             ],
             "index": "pypi",
             "version": "==2.14.3"
+        },
+        "aiogram-broadcaster": {
+            "hashes": [
+                "sha256:739ab68abc39576084c2150d5c577c4f00dded238406f2238e440451da352ec6",
+                "sha256:e372fc5560fd286bd78e45e96bd5ea212dd5171a84ca3fe2fc81c0f2d5d42775"
+            ],
+            "index": "pypi",
+            "version": "==0.0.7"
         },
         "aiohttp": {
             "hashes": [

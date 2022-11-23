@@ -1,4 +1,5 @@
 import requests
+from loader import db
 
 
 class NamozVaqti():
@@ -36,3 +37,17 @@ class NamozVaqti():
 
     def xufton(self):
         return self.get_namoz_vaqt()['hufton']
+
+    def day(self):
+        return self.get_namoz_vaqt()['tong_saharlik'],['quyosh'],['peshin'],['asr'],['shom_iftor'],['hufton']
+
+li = ['Toshkent', 'Andijon', 'Buxoro', 'Guliston', 'Samarqand', 'Namangan', 'Navoiy', 'Jizzax', 'Nukus', 'Qarshi', "Qo'qon", 'Xiva']
+async def api_namaz():
+    for i in li:
+        b = NamozVaqti(i).get_namoz_vaqt()['tong_saharlik']
+        q = NamozVaqti(i).get_namoz_vaqt()['quyosh']
+        p = NamozVaqti(i).get_namoz_vaqt()['peshin']
+        a = NamozVaqti(i).get_namoz_vaqt()['asr']
+        sh = NamozVaqti(i).get_namoz_vaqt()['shom_iftor']
+        x = NamozVaqti(i).get_namoz_vaqt()['hufton']
+        db.api_update(b, q, p, a, sh, x,  i)

@@ -34,7 +34,7 @@ from aiogram import types
 
 # from aiogram_broadcaster import MessageBroadcaster
 #
-# @dp.message_handler(text='Broadcast', user_id=ADMINS)
+# @dp.message_handler(text='Broadcast', user_id=ADMINS[0])
 # async def broadcast_command_handler(msg: Message, state: FSMContext):
 #     await msg.answer('Xammaga jonatish uchun(EHTIYOT BO\'LING):')
 #     await state.set_state('broadcast_text')
@@ -48,7 +48,7 @@ from aiogram import types
 #             await MessageBroadcaster(user[0], msg).run()
 #         except:
 #             pass
-
-
-
+#
+#
+#
 

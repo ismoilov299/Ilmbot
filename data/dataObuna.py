@@ -40,6 +40,7 @@ class DataBase:
 """
         self.execute(sql, commit=True)
 
+
     def add_user(self, user_id: int, name: str):
         sql = """
         INSERT INTO users(user_id, name) VALUES (?, ?)
@@ -60,8 +61,11 @@ class DataBase:
         return self.execute("SELECT * FROM users WHERE subscribe=1",fetchall=True)
 
     def get_times(self):
-        return self.execute("SELECT Mintaqa,Bomdod,Quyosh,Peshin,Asr,Shom,Xufton FROM namaz WHERE Sana=?",(datetime.datetime.now().strftime('%d.%m.%Y'),),fetchall=True)
+        return self.execute("SELECT region,bomdod,quyosh,peshin,asr,shom,xufton FROM namaz",fetchall=True)
 
+    def api_update(self,bomdod:str,quyosh:str,peshin:str,asr:str,shom:str,xufton:str,region:str):
+        return self.execute("UPDATE namaz SET bomdod=?, quyosh=?, peshin=?, asr=?, shom=?, xufton=? WHERE region=?", parameters=(bomdod, quyosh, peshin, asr, shom, xufton, region), commit=True)
+#"
     def get_bugun(self,mintaqa:str):
         delta = datetime.timedelta(hours=5)
         return self.execute("SELECT * FROM namaz WHERE Sana=? AND Mintaqa=?",((datetime.datetime.now()+delta).strftime('%d.%m.%Y'),mintaqa),fetchall=True)
@@ -91,7 +95,6 @@ Executing:
  {statement}
 --------------------------------------------------------
 """)
-
 
 
 
