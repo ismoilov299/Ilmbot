@@ -41,7 +41,7 @@ class NamozVaqti():
     def day(self):
         return self.get_namoz_vaqt()['tong_saharlik'],['quyosh'],['peshin'],['asr'],['shom_iftor'],['hufton']
 
-li = ['Toshkent', 'Andijon', 'Buxoro', 'Guliston', 'Samarqand', 'Namangan', 'Navoiy', 'Jizzax', 'Nukus', 'Qarshi', "Qo'qon", 'Xiva']
+li = ['Toshkent', 'Andijon', 'Buxoro', 'Guliston', 'Samarqand', 'Namangan', 'Navoiy', 'Jizzax', 'Nukus', 'Qarshi', "Qo'qon", 'Xiva','Marg\'ilon']
 async def api_namaz():
     for i in li:
         b = NamozVaqti(i).get_namoz_vaqt()['tong_saharlik']
