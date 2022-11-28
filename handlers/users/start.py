@@ -23,8 +23,6 @@ async def bot_start(message: types.Message):
         # for admin in ADMINS:
         #     await bot.send_message(chat_id=admin,text=(f"Start comandasi:\n{err}"))
 
-@dp.message_handler()
-async def text(msg: types.Message):
-    await msg.answer("Asosiy menu",reply_markup=MEnu)
+
 
 
